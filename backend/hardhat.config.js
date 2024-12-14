@@ -18,8 +18,12 @@ module.exports = {
 			url: `https://eth-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`
 		},
 		ETH_GOERLI: {
-			accounts: [`${process.env.PRIVATE_KEY}`],
+			accounts: [`${process.env.GOERLI_PRIVATE_KEY}`],
 			url: `https://eth-goerli.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`
+		},
+		ETH_SEPOLIA: {
+			accounts: [`${process.env.SEPOLIA_PRIVATE_KEY}`],
+			url: `https://eth-sepolia.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`
 		}
 	},
 	etherscan: {
